@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { ImCheckboxChecked, ImCheckboxUnchecked } from 'react-icons/im'
 import { AiFillEdit } from 'react-icons/ai'
 
-const SearchAndButton = styled.div`
+const SearchAndButtton = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,7 +114,7 @@ function TodoList() {
   return (
     <>
       <h1>Todo List</h1>
-      <SearchAndButton>
+      <SearchAndButtton>
         <SearchForm
           type="text"
           placeholder="Search todo..."
@@ -125,7 +125,7 @@ function TodoList() {
         <RemoveAllButton onClick={removeAllTodos}>
           Remove All
         </RemoveAllButton>
-      </SearchAndButton>
+      </SearchAndButtton>
 
       <div>
         {todos.filter((val) => {
